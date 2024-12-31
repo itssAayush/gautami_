@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="open.css" />
+    <script>
+      function openUp() {
+        const $opentop = document.querySelector("#opentop");
+        const $top = document.querySelector("#top");
+        const $front = document.querySelector("#front");
+        const $back = document.querySelector("#back");
+        const $letter = document.querySelector("#letter");
+        const $button = document.querySelector("button");
+
+        $opentop.beginElement();
+        $top.style.zIndex = 2;
+
+        $top.classList.add("animate");
+        $front.classList.add("animate");
+        $back.classList.add("animate");
+        $button.classList.add("animate");
+        $letter.classList.add("animate");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Hello, Madam..!!</h1>
+    </div>
+    <div id="envelope">
+      <div id="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #4a274a; stroke: none; stroke-width: 0"
+          />
+        </svg>
+      </div>
+      <div id="front">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
+          />
+        </svg>
+      </div>
+      <div id="top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
+          >
+            <animate
+              id="opentop"
+              attributeName="points"
+              dur="0.5s"
+              fill="freeze"
+              begin="indefinite"
+              from="0,100 150,200 300,100"
+              to="0,100 150,0 300,100"
+            />
+          </polygon>
+        </svg>
+      </div>
+
+      <div id="letter">
+        <h1>For My <span>Muse</span></h1>
+
+        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
+        <p>
+          In winter's hush, as the year takes flight,<br>
+          You're the warmth that turns cold to delight.<br>
+          Like snowflakes that dance in a gentle ballet,<br>
+          You brighten my world in your unique way.<br>
+<br>
+          A November breeze with curls so divine,<br>
+          You're a five-foot wonder, one of a kind.<br>
+          I'm August's fire, bold and tough,<br>
+          But with you, I'm soft, never rough.<br>
+<br>
+          To the world, I'm stern, a storm to meet,<br>
+          Yet you see the side that's tender and sweet.<br>
+          For you, I'm pookie, a softer hue,<br>
+          A heart that melts when I'm with you.<br>
+<br>
+          You love your books, lost in their pages,<br>
+          While I'm lost in your eyes, feeling countless stages.<br>
+          You dance like the snow in a heavenly spin,<br>
+          And each move of yours pulls me right in.<br>
+<br>
+          Your voice is a melody, a rhythm so sweet,<br>
+          I could listen forever and never repeat.<br>
+          You talk and you laugh, a fountain of cheer,<br>
+          Every word you say feels so near.<br>
+<br>
+          Art meets science in this curious bond,<br>
+          A mix of two worlds, yet so fond.<br>
+          Your presence is magic, a soft, glowing light,<br>
+          That makes even winter feel cozy and right.<br>
+<br>
+          So here's to you, as the year says goodbye,<br>
+          A star in my sky, my reason to sigh.<br>
+          Stay lovely and radiant, just as you are,<br>
+          You'll always be my brightest star. <br>
+          <br>
+          And as the year ends, you remain my muse,<br>
+          And let's finally watch Pride and Prejudice—what the heck?<br>
+          <a href="new.html">Click Here</a>
+        </p>
+      </div>
+      <button onclick="openUp()">Click Here</button>
+    </div>
+  </body>
+</html>
